@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function NavLink() {
+export default function NavLink({menu}) {
   return (
-    <div className='' id='NavLink'>
+    <div className="" id="NavLink" style={{display:`${menu === "menu" ? "none" :""}`}} >
         <ul>
             <li><a href="">Shop All</a></li>
             <li><a href="">Electric scooters</a></li>

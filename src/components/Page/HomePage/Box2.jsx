@@ -1,10 +1,10 @@
 import React from 'react'
 
+
 export default function Box2({img}) {
   return (
-        <div style={{
-        height:'600px',
-        width:'600px',
+        <div id='Box2' style={{
+       
         
         display:"flex",
         flexDirection:"column",
@@ -15,7 +15,9 @@ export default function Box2({img}) {
 
     }}>
           {img !== false && (
-      <div className='HeroImg'></div>
+      <div className='HeroImg'>
+        <img src={`${img}`} alt="" />
+      </div>
     )}
 
     </div>

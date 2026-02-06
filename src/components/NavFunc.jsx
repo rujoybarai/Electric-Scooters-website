@@ -3,9 +3,9 @@ import { Store } from 'lucide-react'
 import { User } from 'lucide-react'
 import { ChevronRight } from 'lucide-react'
 
-export default function NavFunc() {
+export default function NavFunc({menu}) {
   return (
-    <div className='' id='Navfunc'>
+    <div className='' id='Navfunc' style={{display:`${menu === "delete" ? "none":""}`}}>
         <div className='h-75 w-75 d-flex gap-2' id='Nav-box'>
             <input type="text"  className='h-100 w-75' placeholder='Search product....'
              style={{border:'1px solid rgb(98, 94, 94)',

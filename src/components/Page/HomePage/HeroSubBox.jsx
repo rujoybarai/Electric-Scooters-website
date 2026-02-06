@@ -16,7 +16,7 @@ export default function HeroSubBox() {
 ]
   return (
     <div className='HeroSubbox'>
-        <p style={{marginTop:"10px",fontWeight:"bold",fontSize:'18px',marginLeft:'10px'}}>Information:</p>
+        <p style={{marginTop:"10px",fontWeight:"bold",fontSize:'18px',marginLeft:'10px'}}>Informations:</p>
         <div className='w-100 h-75 d-flex gap-5 justify-content-evenly align-items-center'>
             {
                 Details.map((item,i)=>(

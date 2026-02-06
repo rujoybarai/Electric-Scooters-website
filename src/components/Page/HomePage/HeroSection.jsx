@@ -4,6 +4,7 @@ import Heading from "../../ComonComponents/Heading";
 import Box1 from "./Box1";
 import Box2 from "./Box2";
 import Box3 from "./Box3";
+import img from "../../../assets/heroImg.png"
 
 export default function HeroSection() {
   return (
@@ -19,7 +20,7 @@ export default function HeroSection() {
         }
       />
 
-      <Box2 img={true} />
+      <Box2 img={img} />
 
       <Box3
         dis={

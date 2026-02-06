@@ -8,7 +8,7 @@ import Button from '../../ComonComponents/Button'
 export default function Box1({heading,heroSubBox,btn}) {
     
   return (
-    <div style={{
+    <div id='Box1' style={{
         height:'655px',
         width:'400px',
         background:`linear-gradient(to left, #892be2c8, #ffffff)`,

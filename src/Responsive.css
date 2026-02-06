@@ -1,0 +1,97 @@
+@media(max-width:480px){
+
+#Nav{
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.Menu{
+    visibility: visible;
+     left: 0px;
+     top: 20px;
+     cursor: pointer;
+}
+#NavLink{
+    width: 100%;
+    
+   
+}
+
+#NavLink ul{
+    flex-direction: column;
+    
+   
+}
+
+
+#Logo{
+    width: 100%;
+}
+#Navfunc{
+width: 100%;
+}
+
+.Section1{
+    flex-direction: column;
+    width: 100%;
+}
+.Section1 #Box1{
+
+    width: 80%;
+}
+.Section1 #Box2{
+    width: 400px;
+    height: 400px;
+    
+}
+.Section1 #Box2 .HeroImg{
+     width: 400px;
+    height: 400px;
+}
+.ProductSection{
+    flex-direction: column;
+    width: 100%;
+   
+    column-gap: 40px;
+}
+.ProductSection .Product-sub-box{
+     margin-top: 40px;
+}
+.AboutSection{
+    width: 100%;
+}
+.AccessoriesSection{
+    width: 100%;
+
+
+}
+.AccessoriesSection .A-Box2{
+    flex-direction: column;
+    width: 100%;
+    left: 0px ;
+    
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.AccessoriesSection .A-Box2 .left-box{
+ width: 90%;
+}
+.AccessoriesSection .A-Box2 .right-box{
+    width: 90%;
+}
+
+.A-Box1{
+    visibility: hidden;
+}
+.DetaisSection{
+    width: 100%;
+    margin-top: 80px;
+}
+.DetaisSection .D-box{
+    flex-direction: column;
+
+}
+}
