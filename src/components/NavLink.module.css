@@ -1,0 +1,33 @@
+ .NavLink{
+        width: 30%;
+  min-height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+    }
+ 
+    .NavLink ul{
+  list-style: none;
+  gap: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+.NavLink ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media(max-width:480px){
+
+    .NavLink{
+        display: none;
+    }
+    .NavLink ul{
+     flex-direction: column;
+    }
+}
