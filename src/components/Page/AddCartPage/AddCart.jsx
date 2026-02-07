@@ -19,7 +19,9 @@ export default function AddCart() {
             <p>{item.price}</p>
             <span>1x</span>
           
-            <button style={{
+           
+            </div>
+             <button style={{
                 display:'flex',
                 justifyContent:'center',
                 alignItems:'center',
@@ -27,7 +29,6 @@ export default function AddCart() {
                 width:'30px',
                 border:'none'
             }} onClick={()=> DeleteBtn(i)}> X</button>
-            </div>
             </div>
        ))}
         </div>
