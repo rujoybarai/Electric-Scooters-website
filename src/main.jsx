@@ -10,6 +10,9 @@ import Home from './components/Page/HomePage/Home.jsx'
 import ShopAll from './components/Page/ShopAllPage/ShopAll.jsx'
 import ElectricScooter from './components/Page/ElectricScooterPage/ElectricScooter.jsx'
 import Accessories from './components/Page/AccessoriesPage/Accessories.jsx'
+import Contact from './components/Page/ContactPage/Contact.jsx'
+import About from './components/Page/AboutPage/About.jsx'
+import AddCart from './components/Page/AddCartPage/AddCart.jsx'
 
 const router = createBrowserRouter([
   {path:'/' , element:<App/> ,children:[
@@ -24,6 +27,15 @@ const router = createBrowserRouter([
   },
   {
     path:'/accessories',element:<Accessories/>,
+  },
+  {
+    path:'/contact',element:<Contact/>,
+  },
+  {
+    path:'/about',element:<About/>,
+  },
+  {
+    path:'/addcart' ,element:<AddCart/>,
   }
 ]}
 ]);

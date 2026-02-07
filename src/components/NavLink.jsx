@@ -11,8 +11,9 @@ export default function NavLink({menu}) {
             <li><Link to={'/shopall'}>Shop All</Link></li>
             <li><Link to={'/electricscooter'}>Electric scooters</Link></li>
             <li><Link to={'/accessories'}>Accessories</Link></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><Link to={'/about'}>About</Link></li>
+            <li><Link to={'/contact'}>Contact</Link></li>
+            
         </ul>
     </div>
   )

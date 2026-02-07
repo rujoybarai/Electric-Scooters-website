@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Button from '../../ComonComponents/Button'
+import { StoreData } from '../../../Store/Store';
 
-export default function ProducBox({ title, Cuprice, Beprice, img,cat }) {
+export default function ProducBox({ title, Cuprice, Beprice, img,cat,id,setCartData }) {
+  const {setCount}=useContext(StoreData);
+  const ClickBtn =(id,title,price,img)=>{
+    
+    setCartData(prev => [...prev,
+      {id,title,price,img}
+    ]);
+    setCount(prev =>  prev + 1);
+  }
+
+
   return (
     <div className="SProduct-box" key={cat}>
       <div className="img-box">
@@ -29,16 +41,8 @@ export default function ProducBox({ title, Cuprice, Beprice, img,cat }) {
           {Cuprice}
         </p>
       )}
-      <div
-        style={{
-          position: "absolute",
-          top: "20px",
-          left: "20px",
-          width: "150px",
-          height: "70px",
-        }}
-      >
-        
+      <div onClick={()=>ClickBtn(id,title,Cuprice,img)}>
+        <Button  name={"Add to cart"} h={'35px'} w={"120px"} color={"green"} />
       </div>
     </div>
   )

@@ -1,8 +1,9 @@
 import React from "react";
+import Button from "../../ComonComponents/Button";
 
-export default function ProductSectionBox({ title, Cuprice, Beprice, img }) {
+export default function ProductSectionBox({ title, Cuprice, Beprice, img,cat }) {
   return (
-    <div className="Product-sub-box">
+    <div className="Product-sub-box" key={cat} >
       <div className="img-box">
         <img src={`${img}`} alt="" />
       </div>
@@ -52,6 +53,8 @@ export default function ProductSectionBox({ title, Cuprice, Beprice, img }) {
           Sale!
         </span>
       </div>
+    
+      <Button  name={"Add to cart"} h={'35px'} w={"120px"} color={"green"}/>
     </div>
   );
 }
