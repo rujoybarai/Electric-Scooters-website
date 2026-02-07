@@ -12,18 +12,7 @@
      top: 20px;
      cursor: pointer;
 }
-#NavLink{
-    width: 100%;
-    
-   
-}
 
-
-#NavLink ul{
-    flex-direction: column;
-    
-   
-}
 
 
 #Logo{
@@ -95,4 +84,9 @@ width: 100%;
     flex-direction: column;
 
 }
+.SproductSection-box1{
+    flex-direction: column;
 }
+}
+
+

@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ProductSectionBox from './ProductSectionBox'
 import img1 from "../../../assets/product-img1.jpg";
 import img2 from "../../../assets/product-img2.jpg";
 import img3 from "../../../assets/product-img3.jpg";
 import img4 from "../../../assets/product-img-4.jpg";
 
+
 export default function ProductSection() {
+
+
   const Product = [
     {
      title:"Libero X350",

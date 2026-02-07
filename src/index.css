@@ -36,29 +36,6 @@
 
 
 /* Nav Link Btn */
-#NavLink{
-  width: 30%;
-  min-height: 50px;
-
-  display: flex;
-  justify-content: center;
-  align-items:center ;
-  
-}
-#NavLink ul{
-  list-style: none;
-  gap: 15px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 10px;
-}
-#NavLink ul li a{
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  font-weight: 500;
-}
 
 
 /* Logo */
@@ -294,3 +271,91 @@ justify-content:center ;
   align-items: center;
 }
 
+
+
+/* Shop ALL page */
+.SproductSection{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+
+.SproductSection-box1{
+  width: 90%;
+  min-height: 50px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+  
+ 
+}
+.SproductSection-box1 ul{
+  display: flex;
+
+  font-size: 16px;
+  color: gray;
+  font-weight: 400px;
+  list-style: none;
+ 
+
+
+}
+.SproductSection-box1 ul li a{
+  text-decoration: none;
+  color: gray;
+}
+
+.SproductSection-box1 select{
+  
+  height: 40px;
+ 
+  padding: 2px 5px 2px 5px;
+  border: 1px dotted gray;
+  outline: none;
+  font-size: 14px;
+  color: gray;
+
+
+}
+.SproductSection-box2{
+  min-height: 80vh;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 40px;
+  padding: 40px;
+  gap: 40px;
+}
+.SProduct-box{
+  width: 250px;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+
+}
+
+.SProduct-box .img-box{
+
+  width: 100%;
+  height: 40vh;
+  
+}
+
+.SProduct-box .img-box img{
+  width: 100%;
+  height: 100%;
+ 
+  background-size: cover;
+}

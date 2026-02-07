@@ -6,9 +6,26 @@ import './index.css'
 import './Responsive.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './components/Page/HomePage/Home.jsx'
+import ShopAll from './components/Page/ShopAllPage/ShopAll.jsx'
+import ElectricScooter from './components/Page/ElectricScooterPage/ElectricScooter.jsx'
+import Accessories from './components/Page/AccessoriesPage/Accessories.jsx'
 
 const router = createBrowserRouter([
-  {path:'/' , element:<App/>}
+  {path:'/' , element:<App/> ,children:[
+  {
+   path:'/', element:<Home/>,
+  },
+  {
+    path:'/shopall',element:<ShopAll/>,
+  },
+  {
+    path:'/electricscooter',element:<ElectricScooter/>,
+  },
+  {
+    path:'/accessories',element:<Accessories/>,
+  }
+]}
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
