@@ -22,6 +22,31 @@
   font-weight: 500;
 }
 
+.NavLink2{
+  width: 30%;
+  min-height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  
+}
+.NavLink2 ul{
+  list-style: none;
+  gap: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+.NavLink2 ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
 @media(max-width:480px){
 
     .NavLink{
@@ -30,4 +55,16 @@
     .NavLink ul{
      flex-direction: column;
     }
+    .NavLink2{
+    width: 100%;
+    
+   
+}
+
+
+.NavLink2 ul{
+    flex-direction: column;
+    
+   
+}
 }

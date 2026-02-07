@@ -3,9 +3,9 @@ import styles from './NavLink.module.css'
 
 export default function NavLink({menu}) {
   return (
-    <div  className={menu === "menu" ? styles.NavLink : ""}
-    
-   id={menu !== "menu" ? "NavLink" : undefined}>
+    <div  className={`${menu === "menu" ? styles.NavLink : ""} ${
+    menu !== "menu" ? styles.NavLink2 : ""
+  }`}>
         <ul>
             <li><a href="">Shop All</a></li>
             <li><a href="">Electric scooters</a></li>
