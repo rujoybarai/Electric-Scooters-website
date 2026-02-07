@@ -6,7 +6,7 @@ const products = [
     title: "Booster Brave F1",
     beforePrice: null,
     afterPrice: '$490.00',
-    img:'public/assets/p1.jpg' ,
+    img:'/assets/p1.jpg' ,
     category: "Electric Scooter",
   },
   {
@@ -14,7 +14,7 @@ const products = [
     title: "GoodLock J10",
     beforePrice: null,
     afterPrice: '$95.00',
-    img: "public/assets/p2.jpg",
+    img: "/assets/p2.jpg",
     category: "Accessories",
   },
   {
@@ -22,7 +22,7 @@ const products = [
     title: "Hammer Scooter Lock",
     beforePrice: null,
     afterPrice: "$75.00",
-    img: "public/assets/p3.jpg",
+    img: "/assets/p3.jpg",
     category: "Accessories",
   },
   {
@@ -30,7 +30,7 @@ const products = [
     title: "Libero X150",
     beforePrice: null,
     afterPrice: "$750.00",
-   img: "public/assets/p4.jpg",
+   img: "/assets/p4.jpg",
     category: "Electric Scooter",
   },
   {
@@ -38,7 +38,7 @@ const products = [
     title: "Libero X250",
     beforePrice: null,
     afterPrice: "$750.00",
-   img: "public/assets/p5.jpg",
+   img: "/assets/p5.jpg",
     category: "Electric Scooter",
   },
 
@@ -47,7 +47,7 @@ const products = [
     title: "Libero X350",
     beforePrice: "$875.00",
     afterPrice: '$799.00',
-    img: "public/assets/p6.jpg",
+    img: "/assets/p6.jpg",
     category: "Electric Scooter",
   },
   {
@@ -55,7 +55,7 @@ const products = [
     title: "MAX3 Scooter Lock",
     beforePrice: null,
     afterPrice: '$90.00',
-    img: "public/assets/p7.jpg",
+    img: "/assets/p7.jpg",
     category: "Accessories",
   },
   {
@@ -63,7 +63,7 @@ const products = [
     title: "North Booster 1",
     beforePrice: null,
     afterPrice: '$725.00',
-   img: "public/assets/p8.jpg",
+   img: "/assets/p8.jpg",
     category: "Electric Scooter",
   },
   {
@@ -71,7 +71,7 @@ const products = [
     title: "North D Booster 2000",
     beforePrice: null,
     afterPrice:'$890.00',
-   img: "public/assets/p9.jpg",
+   img: "/assets/p9.jpg",
     category: "Electric Scooter",
   },
   {
@@ -79,7 +79,7 @@ const products = [
     title: "Practico PRO 500",
     beforePrice: null,
     afterPrice: "$699.00",
-   img: "public/assets/p10.jpg",
+   img: "/assets/p10.jpg",
     category: "Electric Scooter",
   },
 
@@ -88,7 +88,7 @@ const products = [
     title: "Practico S2 Exclusive",
     beforePrice: "$750.00",
     afterPrice: "$600.00",
-  img: "public/assets/p11.jpg",
+  img: "/assets/p11.jpg",
     category: "Electric Scooter",
   },
   {
@@ -96,7 +96,7 @@ const products = [
     title: "Practico Z50 Exclusive",
     beforePrice:null,
     afterPrice: "$750.00",
-  img: "public/assets/p12.jpg",
+  img: "/assets/p12.jpg",
     category: "Electric Scooter",
   },
   {
@@ -104,7 +104,7 @@ const products = [
     title: "SilverPath C1",
     beforePrice: null,
     afterPrice: "$725.00",
-    img: "public/assets/p13.jpg",
+    img: "/assets/p13.jpg",
     category: "Electric Scooter",
   },
   {
@@ -112,7 +112,7 @@ const products = [
     title: "SilverPath MAX1",
     beforePrice: null,
     afterPrice: "$699.00",
-   img: "public/assets/p14.jpg",
+   img: "/assets/p14.jpg",
     category: "Electric Scooter",
   },
   {
@@ -120,7 +120,7 @@ const products = [
     title: "SilverPath MAX2",
     beforePrice: null,
     afterPrice: "$575.00",
-    img: "public/assets/p15.jpg",
+    img: "/assets/p15.jpg",
     category: "Electric Scooter",
   },
 
@@ -129,7 +129,7 @@ const products = [
     title: "U-Lock Force",
     beforePrice: null,
     afterPrice: '$99.00',
-   img: "public/assets/p16.jpg",
+   img: "/assets/p16.jpg",
     category: "Accessories",
   },
   {
@@ -137,7 +137,7 @@ const products = [
     title: "U-Lock Force MAX",
     beforePrice: '$90.00',
     afterPrice: '$75.00',
-   img: "public/assets/p17.jpg",
+   img: "/assets/p17.jpg",
     category: "Accessories",
   },
   {
@@ -145,7 +145,7 @@ const products = [
     title: "Unbeatable Lock 100",
     beforePrice: '$80.00',
     afterPrice: '$69.00',
-  img: "public/assets/p18.jpg",
+  img: "/assets/p18.jpg",
     category: "Accessories",
   },
 
