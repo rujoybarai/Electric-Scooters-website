@@ -1,7 +1,9 @@
 import React from "react";
 
 
+
 export default function Button({ name, h, w, color }) {
+   
   return (
     <>
       {name && (
@@ -20,6 +22,7 @@ export default function Button({ name, h, w, color }) {
             color:'white',
             cursor:'pointer'
           }}
+          
         >
           {name}
         </div>

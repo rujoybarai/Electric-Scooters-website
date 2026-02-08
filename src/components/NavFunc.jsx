@@ -25,7 +25,7 @@ export default function NavFunc({menu}) {
         <Link to={'/addcart'}><Store size={28} color="black" strokeWidth={1.25} style={{cursor:'pointer'}} /></Link>
         
         <span className='text-center'>{count}</span>
-        <User size={28} color="#000000" strokeWidth={1.25}  style={{cursor:'pointer'}} />
+        <Link to={'/account'}><User size={28} color="#000000" strokeWidth={1.25}  style={{cursor:'pointer'}} /></Link>
  
     </div>
   )

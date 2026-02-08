@@ -4,7 +4,7 @@ import ProducBox from "./ProducBox";
 import { StoreData } from "../../../Store/Store";
 
 export default function SproductSection() {
-  const { pruduct, setCartData } = useContext(StoreData);
+  const { pruduct} = useContext(StoreData);
 
   return (
     <div className="SproductSection">
@@ -39,7 +39,7 @@ export default function SproductSection() {
             key={item.id}
             id={item.id}
             cat={item.category}
-            setCartData={setCartData}
+            
           />
         ))}
       </div>

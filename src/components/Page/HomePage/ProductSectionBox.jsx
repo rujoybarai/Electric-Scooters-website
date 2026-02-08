@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Button from "../../ComonComponents/Button";
+import { StoreData } from "../../../Store/Store";
 
-export default function ProductSectionBox({ title, Cuprice, Beprice, img,cat }) {
+
+export default function ProductSectionBox({ title, Cuprice, Beprice, img,cat,id}) {
+   const { ClickBtn, ClickeProduct } = useContext(StoreData);
   return (
     <div className="Product-sub-box" key={cat} >
-      <div className="img-box">
+      <div className="img-box"  onClick={()=> ClickeProduct(title,Cuprice,img,cat,id)}>
         <img src={`${img}`} alt="" />
       </div>
       {title && (
@@ -53,8 +56,9 @@ export default function ProductSectionBox({ title, Cuprice, Beprice, img,cat }) 
           Sale!
         </span>
       </div>
-    
+      <div onClick={() => ClickBtn(id, title, Cuprice, img)}>
       <Button  name={"Add to cart"} h={'35px'} w={"120px"} color={"green"}/>
+      </div>
     </div>
   );
 }

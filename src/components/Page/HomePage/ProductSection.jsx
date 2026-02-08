@@ -17,7 +17,7 @@ export default function ProductSection() {
     <div className='ProductSection'>
       
       {pruduct?.slice(0, 4).map((item)=>(
-        <ProductSectionBox title={item.title} img={item.img} Beprice={item.beforePrice} Cuprice={item.afterPrice} key={item.id} cat={item.category}/>
+        <ProductSectionBox title={item.title} img={item.img} Beprice={item.beforePrice} Cuprice={item.afterPrice} key={item.id} cat={item.category} id={item.id}/>
       ))}
       
       </div>

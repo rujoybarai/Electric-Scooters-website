@@ -13,6 +13,11 @@ import Accessories from './components/Page/AccessoriesPage/Accessories.jsx'
 import Contact from './components/Page/ContactPage/Contact.jsx'
 import About from './components/Page/AboutPage/About.jsx'
 import AddCart from './components/Page/AddCartPage/AddCart.jsx'
+import { ToastContainer } from 'react-toastify';
+import Acount from './components/Page/AccountPage/Acount.jsx'
+import Login from './components/Page/AccountPage/Login.jsx'
+import ProductDetails from './components/Page/ProductDetailsPage/ProductDetails.jsx'
+  
 
 const router = createBrowserRouter([
   {path:'/' , element:<App/> ,children:[
@@ -36,11 +41,22 @@ const router = createBrowserRouter([
   },
   {
     path:'/addcart' ,element:<AddCart/>,
+  },
+  {
+    path:'/account', element:<Acount/>,children:[
+      {
+         element:<Login/>,index:true,
+      }
+    ]
+  },
+  {
+    path:"/productdetails", element:<ProductDetails/>,
   }
 ]}
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+     <ToastContainer />
    <RouterProvider router={router}/>
   </StrictMode>,
 )

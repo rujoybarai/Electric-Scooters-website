@@ -116,6 +116,73 @@ width: 100%;
     width: 70%;
   }
 
+  .product-page {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  /* LEFT */
+  .main-img {
+    padding: 20px;
+  }
+
+  .thumbs {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .thumbs img {
+    width: 60px;
+  }
+
+  /* RIGHT */
+  .product-right h1 {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .cart-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .qty-box {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .add-cart {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  .payment-box {
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .cards img {
+    height: 26px;
+  }
+
+  .features li {
+    font-size: 14px;
+  }
+
 }
 
 
