@@ -7,7 +7,7 @@ export default function ProductSectionBox({ title, Cuprice, Beprice, img,cat,id}
    const { ClickBtn, ClickeProduct } = useContext(StoreData);
   return (
     <div className="Product-sub-box" key={cat} >
-      <div className="img-box"  onClick={()=> ClickeProduct(title,Cuprice,img,cat,id)}>
+      <div className="img-box"  onClick={()=> ClickeProduct(title,Cuprice,img,cat,id)} style={{cursor:'pointer'}}>
         <img src={`${img}`} alt="" />
       </div>
       {title && (

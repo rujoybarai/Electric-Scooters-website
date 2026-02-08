@@ -11,7 +11,7 @@ export default function ProducBox({title,Cuprice, Beprice,img,cat,id}) {
 
   return (
     <div className="SProduct-box" key={cat} >
-      <div className="img-box" onClick={()=> ClickeProduct(title,Cuprice,img,cat,id)}>
+      <div className="img-box" onClick={()=> ClickeProduct(title,Cuprice,img,cat,id)} style={{cursor:"pointer"}}>
         <img src={`${img}`} alt="" />
       </div>
       {title && (
