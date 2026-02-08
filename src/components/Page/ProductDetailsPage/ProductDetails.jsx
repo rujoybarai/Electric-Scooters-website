@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import Layout from "../../Layout";
 import { StoreData } from "../../../Store/Store";
+import { motion } from "motion/react";
 
 
 export default function ProductDetails() {
@@ -52,7 +53,12 @@ export default function ProductDetails() {
             <button onClick={() => setQty(qty + 1)}>+</button>
           </div>
 
-          <button className="add-cart" onClick={() => ClickBtn(ProductDetail.id, ProductDetail.title, ProductDetail.price, ProductDetail.img)} >ADD TO CART</button>
+          <motion.button style={{backgroundColor:'blueviolet',color:'white'}} className="add-cart" onClick={() => ClickBtn(ProductDetail.id, ProductDetail.title, ProductDetail.price, ProductDetail.img)}
+           initial={{scale:1,opacity:1}}
+        whileHover={{scale:1.1,transition:{duration:0.2}}}
+        whileTap={{scale:0.8,opacity:0.8,transition:{duration:0.3,ease:"easeIn",type:'spring'}}}
+          
+          >ADD TO CART</motion.button>
         </div>
 
         <div className="payment-box">

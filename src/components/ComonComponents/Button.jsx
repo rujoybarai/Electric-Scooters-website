@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 
 
 
@@ -7,7 +8,7 @@ export default function Button({ name, h, w, color }) {
   return (
     <>
       {name && (
-        <div
+        <motion.div
           style={{
             width: `${w}`,
             height: `${h}`,
@@ -23,9 +24,12 @@ export default function Button({ name, h, w, color }) {
             cursor:'pointer'
           }}
           
+        initial={{scale:1,opacity:1}}
+        whileHover={{scale:1.1,transition:{duration:0.2}}}
+        whileTap={{scale:0.8,opacity:0.8,transition:{duration:0.3,ease:"easeIn",type:'spring'}}}
         >
           {name}
-        </div>
+        </motion.div>
       )}
     </>
   );

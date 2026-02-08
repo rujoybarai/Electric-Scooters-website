@@ -38,7 +38,7 @@ export default function ProducBox({title,Cuprice, Beprice,img,cat,id}) {
         </p>
       )}
       <div onClick={() => ClickBtn(id, title, Cuprice, img)}>
-        <Button name={"Add to cart"} h={"35px"} w={"120px"} color={"green"} />
+        <Button name={"Add to cart"} h={"35px"} w={"120px"} color={"blueviolet"} />
       </div>
     </div>
   );

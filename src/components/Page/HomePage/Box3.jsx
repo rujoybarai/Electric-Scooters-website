@@ -2,6 +2,8 @@ import React from "react";
 import { Facebook } from "lucide-react";
 import { Twitter } from "lucide-react";
 import { Youtube } from "lucide-react";
+import { motion } from "motion/react"
+
 
 export default function Box3({dis}) {
 
@@ -17,7 +19,7 @@ export default function Box3({dis}) {
         }
 ]
   return (
-    <div
+    <motion.div
       style={{
         height: "655px",
         width: "300px",
@@ -30,18 +32,23 @@ export default function Box3({dis}) {
        borderTopLeftRadius:"30%",
        paddingLeft:"20px"
       }}
+
+      initial={{x:10,opacity:0}}
+    animate={{x:0,opacity:1,transition:{duration:0.5,ease:'linear'}}}
     >
-      <div
+      <motion.div
         style={{
           width: "80%",
           minHeight: "150px",
         }}
+          initial={{y:15,opacity:0}}
+    animate={{y:0,opacity:1,transition:{duration:0.4,ease:'linear',delay:0.5}}}
       >
         <h5 style={{ fontWeight: "bold" }}>Discription:</h5>
         <p style={{ fontSize: "15px", color: "gray" }}>
          {dis}
         </p>
-      </div>
+      </motion.div>
 
       <div>
         <h5 style={{ color: "gray" }}>Share:</h5>
@@ -55,7 +62,7 @@ export default function Box3({dis}) {
           }}
         >
           {Icons.map((link,i)=>(
-                <div
+                <motion.div
             style={{
               height: "40px",
               width: "40px",
@@ -67,13 +74,17 @@ export default function Box3({dis}) {
             }}
             key={i}
             id="HeroIcon"
+           
+            initial={{y:10,opacity:0}}
+    animate={{y:0,opacity:1,transition:{duration:0.5,ease:"easeInOut", delay:0.5}}}
+
           >
             {link.icon}
-          </div>
+          </motion.div>
           ))}
           
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
