@@ -4,7 +4,9 @@ import ProducBox from "./ProducBox";
 import { StoreData } from "../../../Store/Store";
 
 export default function SproductSection() {
-  const { pruduct} = useContext(StoreData);
+  const { FilteredProduct} = useContext(StoreData);
+
+ 
 
   return (
     <div className="SproductSection">
@@ -30,7 +32,7 @@ export default function SproductSection() {
         </select>
       </div>
       <div className="SproductSection-box2">
-        {pruduct.map((item) => (
+        {FilteredProduct.map((item) => (
           <ProducBox
             title={item.title}
             Cuprice={item.afterPrice}

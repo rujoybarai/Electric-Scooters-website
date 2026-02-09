@@ -56,7 +56,7 @@ export default function ProductSectionBox({ title, Cuprice, Beprice, img,cat,id}
           Sale!
         </span>
       </div>
-      <div onClick={() => ClickBtn(id, title, Cuprice, img)}>
+      <div onClick={() => ClickBtn(id, title, Cuprice, img,1)}>
       <Button  name={"Add to cart"} h={'35px'} w={"120px"} color={"blueviolet"}/>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { StoreData } from "../../../Store/Store";
 import ProducBox from "../ShopAllPage/ProducBox";
 
 export default function EproductBox() {
-  const { pruduct, setCartData } = useContext(StoreData);
+  const {FilteredProduct, setCartData } = useContext(StoreData);
 
   return (
     <div className="SproductSection">
@@ -31,7 +31,7 @@ export default function EproductBox() {
         </select>
       </div>
       <div className="SproductSection-box2">
-        {pruduct
+        {FilteredProduct
           .filter((item) => item.category === "Electric Scooter")
           .map((item) => (
             <ProducBox

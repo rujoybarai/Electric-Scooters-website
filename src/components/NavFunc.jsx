@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { StoreData } from '../Store/Store'
 
 export default function NavFunc({menu}) {
-  const {count}=useContext(StoreData);
+  const {count,searchProduct,setSearchProduct}=useContext(StoreData);
   return (
     <div className='' id='Navfunc' style={{display:`${menu === "delete" ? "none":""}`}}>
         <div className='h-75 w-75 d-flex gap-2' id='Nav-box'>
@@ -19,6 +19,9 @@ export default function NavFunc({menu}) {
                      
 
             }}  
+                onChange={(e)=>setSearchProduct(e.target.value)}
+                value={searchProduct}
+                
                 />
             <button className=' h-100 ' ><ChevronRight size={40} color="#ffffff" /></button>
         </div>
