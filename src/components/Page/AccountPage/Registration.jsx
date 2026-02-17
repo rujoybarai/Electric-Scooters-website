@@ -1,13 +1,13 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FirebaseContext } from '../../../Store/Firebase';
 
-export default function Login() {
-  const { loginUser, user } = useContext(FirebaseContext);
+export default function Registration() {
+  const { registerUser } = useContext(FirebaseContext);
   const navigate = useNavigate();
 
-  const [form, setForm] = useState({ email: '', password: '' });
+  const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [loading, setLoading] = useState(false);
 
   const handleChange = e => {
@@ -19,8 +19,9 @@ export default function Login() {
     setLoading(true);
 
     try {
-      await loginUser(form.email, form.password);
-      navigate('/account/profile');
+      await registerUser(form.name, form.email, form.password);
+      alert("Registration successful! Please login.");
+      navigate('/login');
     } catch (err) {
       alert(err.message);
     } finally {
@@ -28,16 +29,20 @@ export default function Login() {
     }
   };
 
-  // Redirect if user is already logged in
-  useEffect(() => {
-    if (user) navigate('/account/profile');
-  }, [user, navigate]);
-
   return (
     <div className="auth-box">
-      <h2>Login</h2>
+      <h2>Register</h2>
 
       <form onSubmit={handleSubmit}>
+        <input
+          name="name"
+          type="text"
+          placeholder="Full Name"
+          value={form.name}
+          onChange={handleChange}
+          required
+        />
+
         <input
           name="email"
           type="email"
@@ -62,13 +67,9 @@ export default function Login() {
           whileTap={{ scale: 0.9 }}
           disabled={loading}
         >
-          {loading ? "Logging in..." : "Login"}
+          {loading ? "Registering..." : "Register"}
         </motion.button>
       </form>
-
-      <p className="mt-2 text-center">
-        Don't have an account? <Link to="registration">Register</Link>
-      </p>
     </div>
   );
 }

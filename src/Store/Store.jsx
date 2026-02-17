@@ -3,6 +3,7 @@ import products from "./ProductData";
 import { toast, Bounce } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
+
 export const StoreData = createContext(null);
 
 const MainStore = ({ children }) => {
@@ -110,6 +111,7 @@ const MainStore = ({ children }) => {
     item.title.toLowerCase().includes(searchProduct.toLowerCase()),
   );
 
+  
   return (
     <StoreData.Provider
       value={{
@@ -125,7 +127,8 @@ const MainStore = ({ children }) => {
         searchProduct,
         setSearchProduct,
         FilteredProduct,
-        totalPrice
+        totalPrice,
+        
       }}
     >
       {children}

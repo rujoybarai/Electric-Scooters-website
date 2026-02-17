@@ -17,6 +17,8 @@ import { ToastContainer } from 'react-toastify';
 import Acount from './components/Page/AccountPage/Acount.jsx'
 import Login from './components/Page/AccountPage/Login.jsx'
 import ProductDetails from './components/Page/ProductDetailsPage/ProductDetails.jsx'
+import Registration from './components/Page/AccountPage/Registration.jsx'
+import Profile from './components/Page/AccountPage/Profile.jsx'
   
 
 const router = createBrowserRouter([
@@ -45,7 +47,16 @@ const router = createBrowserRouter([
   {
     path:'/account', element:<Acount/>,children:[
       {
-         element:<Login/>,index:true,
+        path:'login', element:<Login/>,
+      },
+      {
+        path:'registration', element:<Registration/>,
+      },
+      {
+        path:'profile', element:<Profile/>,
+      },
+      {
+        element:<Login/>,index:true,
       }
     ]
   },
