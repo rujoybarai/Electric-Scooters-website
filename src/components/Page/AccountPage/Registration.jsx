@@ -20,7 +20,7 @@ export default function Registration() {
 
     try {
       await registerUser(form.name, form.email, form.password);
-      alert("Registration successful! Please login.");
+      
       navigate('/login');
     } catch (err) {
       alert(err.message);

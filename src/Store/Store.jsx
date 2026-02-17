@@ -10,7 +10,7 @@ const MainStore = ({ children }) => {
   const SaveCartData =  (() => {
   try {
     const data = JSON.parse(localStorage.getItem("CartData"));
-    return Array.isArray(data) ? data : null;
+    return Array.isArray(data) ? data : [];
   } catch {
     return null;
   }
@@ -38,7 +38,7 @@ const MainStore = ({ children }) => {
  
   const ClickBtn = (id, title, price, img,p) => {
    
-     const exist =CartData.some(item => item.id === id);
+     const exist =CartData?.some(item => item.id === id);
       
     if(exist){
       setTotalPrice(prev => prev+Number(price));
@@ -128,6 +128,8 @@ const MainStore = ({ children }) => {
         setSearchProduct,
         FilteredProduct,
         totalPrice,
+        setTotalPrice,
+        
         
       }}
     >

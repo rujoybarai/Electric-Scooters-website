@@ -19,6 +19,8 @@ import Login from './components/Page/AccountPage/Login.jsx'
 import ProductDetails from './components/Page/ProductDetailsPage/ProductDetails.jsx'
 import Registration from './components/Page/AccountPage/Registration.jsx'
 import Profile from './components/Page/AccountPage/Profile.jsx'
+import OrderPage from './components/Page/AddCartPage/OrderPage.jsx'
+import Loading from './components/ComonComponents/Loading.jsx'
   
 
 const router = createBrowserRouter([
@@ -27,22 +29,34 @@ const router = createBrowserRouter([
    path:'/', element:<Home/>,
   },
   {
-    path:'/shopall',element:<ShopAll/>,
+    path:'/shopall',element:<ShopAll/>,loader: async ()=> {
+        return <Loading/>
+        },
   },
   {
-    path:'/electricscooter',element:<ElectricScooter/>,
+    path:'/electricscooter',element:<ElectricScooter/>,loader: async ()=> {
+        return <Loading/>
+        },
   },
   {
-    path:'/accessories',element:<Accessories/>,
+    path:'/accessories',element:<Accessories/>,loader: async ()=> {
+        return <Loading/>
+        },
   },
   {
-    path:'/contact',element:<Contact/>,
+    path:'/contact',element:<Contact/>,loader: async ()=> {
+        return <Loading/>
+        },
   },
   {
-    path:'/about',element:<About/>,
+    path:'/about',element:<About/>,loader: async ()=> {
+        return <Loading/>
+        },
   },
   {
-    path:'/addcart' ,element:<AddCart/>,
+    path:'/addcart' ,element:<AddCart/>,loader: async ()=> {
+        return <Loading/>
+        },
   },
   {
     path:'/account', element:<Acount/>,children:[
@@ -53,7 +67,9 @@ const router = createBrowserRouter([
         path:'registration', element:<Registration/>,
       },
       {
-        path:'profile', element:<Profile/>,
+        path:'profile', element:<Profile/>,loader: async ()=> {
+        return <Loading/>
+        },
       },
       {
         element:<Login/>,index:true,
@@ -61,7 +77,14 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path:"/productdetails", element:<ProductDetails/>,
+    path:"/productdetails", element:<ProductDetails/>,loader: async ()=> {
+        return <Loading/>
+        },
+  },
+  {
+    path:'/orderpage',element:<OrderPage/>,loader: async ()=> {
+        return <Loading/>
+        },
   }
 ]}
 ]);

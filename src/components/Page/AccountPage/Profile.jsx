@@ -71,7 +71,7 @@ export default function Profile() {
           <div className="card p-4 text-center h-100">
             <h5>📦 My Orders</h5>
             <p>Track your previous purchases</p>
-            <Link to="/orders" className="btn btn-dark">View Orders</Link>
+            <Link to="/orderpage" className="btn btn-dark">View Orders</Link>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ export default function Profile() {
           <div className="card p-4 text-center h-100">
             <h5>📍 Address</h5>
             <p>Manage shipping address</p>
-            <Link to="/address" className="btn btn-success">Manage</Link>
+            <Link to="" className="btn btn-success">Manage</Link>
           </div>
         </div>
       </div>
